@@ -1,3 +1,5 @@
+import json
+import xml.etree.cElementTree as ET
 
 PLAIN = "plain"
 PLAIN_UP = "plain_uppercase"
@@ -24,12 +26,21 @@ def get_formatted(msg, imie, format):
 
 
 def format_to_json(msg, imie):
-    return ('{ "imie":"' + imie + '", "mgs":"' + msg + '"}')
+    data = {
+      "imie": imie,
+      "mgs": msg
+    }
+    return json.dumps(data)
 
 
 def format_to_xml(msg, imie):
-    xml = '<greetings><name>' + imie + '</name><msg>'
-    return (xml + msg + '</msg></greetings>')
+    # <greetings>
+    greetings = ET.Element("greetings")
+    # <name>
+    ET.SubElement(greetings, "name").text = imie
+    # <msg>
+    ET.SubElement(greetings, "msg").text = msg
+    return ET.tostring(greetings)
 
 
 def plain_text(msg, imie):
