@@ -3,16 +3,18 @@ from hello_world.formater import get_formatted
 from hello_world.formater import SUPPORTED, PLAIN
 from flask import request
 
-moje_imie = "Marcin"
 msg = "Hello World!"
 
 
 @app.route('/')
 def index():
     output = request.args.get('output')
+    name = request.args.get('name')
     if not output:
         output = PLAIN
-    return get_formatted(msg, moje_imie,
+    if not name:
+        name = PLAIN
+    return get_formatted(msg, name,
                          output.lower())
 
 
