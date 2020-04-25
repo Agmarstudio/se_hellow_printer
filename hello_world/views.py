@@ -1,7 +1,7 @@
 from hello_world import app
 from hello_world.formater import get_formatted
 from hello_world.formater import SUPPORTED, PLAIN
-from flask import request
+from flask import request # noqa
 
 msg = "Hello World!"
 moje_imie = "Marcin"
