@@ -4,7 +4,7 @@ from hello_world.formater import SUPPORTED, PLAIN
 from flask import request
 
 msg = "Hello World!"
-moje_imie = "Marcin TEST AUTOMATIC DEPLOY"
+moje_imie = "Marcin TEST AUTOMATIC DEPLOY - STATUSCAKE"
 
 
 @app.route('/')
