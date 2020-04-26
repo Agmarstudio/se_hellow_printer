@@ -2,3 +2,6 @@
 .cache
 .venv/
 .vscode/
+test_results.xml
+coverage.xml
+.coverage

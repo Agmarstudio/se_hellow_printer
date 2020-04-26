@@ -1,7 +1,7 @@
 # App statuses
 [![Build Status](https://travis-ci.com/Agmarstudio/se_hellow_printer.svg?branch=master)](https://travis-ci.com/Agmarstudio/se_hellow_printer)
 
-<a href="https://www.statuscake.com" title="Website Uptime Monitoring"><img src="https://app.statuscake.com/button/index.php?Track=V4G7HDAtt3&Days=1&Design=1" /></a>
+<a href="https://www.statuscake.com" title="Website Uptime Monitoring"><img src="https://app.statuscake.com/button/index.php?Track=V4G7HDAtt3&Days=1000&Design=7" /></a>
 
 
 # Simple Flask App
