@@ -84,3 +84,6 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
   $ yum install -y docker-ce
   $ systemctl start docker
   ```
+
+## Travis status
+[![Build Status](https://travis-ci.com/Agmarstudio/se_hellow_printer.svg?branch=master)](https://travis-ci.com/Agmarstudio/se_hellow_printer)
